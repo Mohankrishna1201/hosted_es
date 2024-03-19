@@ -1,0 +1,272 @@
+/**
+* Template Name: TheEvent
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background-color: rgba(6, 12, 34, 0.8);
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-inner {
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  color: #2b84ea;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding-top:10px;
+  margin: 0;
+  height: 200px;
+}
+
+@media (max-width: 992px) {
+  #header #logo img {
+    max-height: 200px;
+    padding-top:10px;
+  margin: 0;
+  }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+
+.main{
+  top: 20%;
+  padding: 10% 5% 0% 5%;
+
+
+}
+#about {
+  background: url("https://img.freepik.com/premium-photo/night-earth-global-virtual-internet-world-connection-metaverse-technology-network-digital-communication-worldwide-networking-connect-3d-background-elements-this-image-furnished-by-nasa_79161-2039.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701388800&semt=ais");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+  z-index:0;
+}
+
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 760px) {
+  #about {
+    background-attachment: fixed;
+   
+    padding-top:100px;
+  }
+}
+
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.605);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index :-1;
+}
+
+#webteam_members h2{
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 4%;
+  color: white;
+  padding-top: 5%;
+  text-align:center;
+  font-weight:600;
+  z-index : 99999;
+}
+
+#team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align:center;
+}
+
+#hero .card {
+  margin: 2%;
+  width: 200px;
+  height: 280px;
+  
+  border-radius: 10px;
+  text-align:center;
+  color: #f0f0f0;
+  overflow: hidden;
+  font-family: inherit;
+  z-index: 1;
+  justify-content: center;
+  background-color: rgb(32, 43, 57);
+}
+
+#hero .main-image {
+  display: flex;
+  margin: 20px auto 10px auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+ object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #02042a;
+  opacity: 1;
+}
+
+#hero p {
+  opacity: 0;
+  transition: all 0.5s;
+  font-weight:500;
+}
+
+#hero .heading {
+  padding-top: 5%;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight:600;
+}
+
+#hero .heading_sub {
+  padding-top: 5%;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2b84ea;
+  text-transform: uppercase;
+}
+
+#hero a {
+  padding-top: 2%;
+  cursor: pointer;
+  
+}
+
+#hero .card:hover .main-image {
+  transform: scale(1.21);
+  border: 1px solid #f0f0f0;
+  object-fit: cover;
+}
+
+#hero .card:hover .main-image {
+  opacity: 1;
+}
+#hero .card:hover p {
+  opacity: 1;
+}
+
+#hero .card:hover .heading_sub {
+  padding-top: 5%;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2b84ea;
+  text-transform: uppercase;
+}
+
+
+#hero p .fab{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: #f9f3f3;
+  padding-right: 15px;
+  padding-left:15px ;
+}
+
+#hero p .fas{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: #f9f3f3;
+  padding-right: 15px;
+  padding-left:15px ;
+}
+
+
+
+
+
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #2b84ea;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #02042a;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
